@@ -20,14 +20,20 @@
                     <img src="./static/img/logo.png" alt="logo" width="40px" class="ms-1">
                 </div>
                 <div class="order-md-last col-10 col-md-6 gap-2 d-flex justify-content-end">
-                    <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa fa-user-circle"></i> Sign in
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-user-circle"></i>
+                        <span class="d-none d-sm-block ps-2">Sign in</span>
                     </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa fa-heart"></i> Wishlist
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-heart"></i>
+                        <span class="d-none d-sm-block ps-2">Wishlist</span>
                     </button>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa fa-shopping-cart"></i> My cart
+                    <button type="button"
+                        class="btn btn-outline-secondary  d-flex justify-content-center align-items-center">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="d-none d-sm-block ps-2">My cart</span>
                     </button>
                 </div>
                 <div class="col-12 col-md-5 mt-2 mt-md-0">
@@ -53,7 +59,7 @@
     <section>
         <div class="container">
             <div class="row py-5">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4 col-lg-3">
                     <!-- filters -->
                     <button class="text-uppercase btn btn-outline-primary w-100 mb-3 d-md-none"
                         data-bs-toggle="collapse" data-bs-target="#collapse-filter" aria-expanded="false"
@@ -63,7 +69,7 @@
                     <div class="accordion shadow-sm mb-4 collapse d-md-block" id="collapse-filter">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed btn btn-light border" type="button"
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#filter-related-items"
                                     aria-expanded="false" aria-controls="filter-related-items">
                                     Related items
@@ -86,7 +92,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed btn btn-light border" type="button"
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#filter-brands" aria-expanded="false"
                                     aria-controls="filter-brands">
                                     Brands
@@ -98,44 +104,50 @@
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Mercedes</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">120</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">120</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Toyota</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">15</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">15</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Mitsubishi</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">35</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">35</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Nissan</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">89</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">89</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Honda</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">30</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">30</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <input type="checkbox"><label class="ms-1">Suzuki</label>
                                         </div>
-                                        <span class="rounded bg-body-secondary">30</span>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">30</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed btn btn-light border" type="button"
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#filter-price" aria-expanded="false"
                                     aria-controls="filter-price">
                                     Price
@@ -154,7 +166,8 @@
                                             <input type="text" placeholder="$10,000" class="rounded border w-100">
                                         </div>
                                         <div class=" col-12 mt-4 px-3">
-                                            <button class="text-uppercase w-100 border-1 rounded py-2">Apply</button>
+                                            <button
+                                                class="text-uppercase w-100 border-1 rounded py-2 bg-light">Apply</button>
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +175,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed btn btn-light border" type="button"
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#filter-size" aria-expanded="false"
                                     aria-controls="filter-size">
                                     Size
@@ -191,7 +204,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed btn btn-light border" type="button"
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#filter-ratings" aria-expanded="false"
                                     aria-controls="filter-ratings">
                                     Ratings
@@ -249,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-md-8 col-lg-9">
                     <!-- products -->
                     <div class="d-flex justify-content-between align-items-center">
                         <span>32 Items found</span>
@@ -262,7 +275,7 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-2.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -280,7 +293,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-3.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -295,7 +308,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-4.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -310,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-5.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -325,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-6.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -340,7 +353,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-2.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -355,7 +368,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-3.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -370,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-4.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -385,7 +398,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-4 p-2">
+                        <div class="col-12 col-sm-6 col-lg-4 py-2">
                             <div class="card w-100 shadow-sm" style="width: 18rem;">
                                 <img src="./static/img/product-1.jpg" class="card-img-top" alt="Product 1">
                                 <div class="card-body">
@@ -439,31 +452,31 @@
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <!-- store -->
                         <h6 class="text-uppercase">Store</h6>
-                        <ul class="text-white-50 list-unstyled">
-                            <li>About us</li>
-                            <li>Find store</li>
-                            <li>Categories</li>
-                            <li>Blogs</li>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">About us</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Find store</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Categories</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Blogs</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <!-- information -->
                         <h6 class="text-uppercase">Information</h6>
-                        <ul class="text-white-50 list-unstyled">
-                            <li>Help center</li>
-                            <li>Money refund</li>
-                            <li>Shipping info</li>
-                            <li>Refunds</li>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Money refund</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Shipping info</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Refunds</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <!-- support -->
                         <h6 class="text-uppercase">Support</h6>
-                        <ul class="text-white-50 list-unstyled">
-                            <li>Help center</li>
-                            <li>Documents</li>
-                            <li>Account restore</li>
-                            <li>My orders</li>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Documents</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Account restore</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">My orders</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-3 col-lg-3">
