@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-2 col-md-1">
+                    <img src="./static/img/logo.png" alt="logo" width="40px" class="ms-1">
+                </div>
+                <div class="order-md-last col-10 col-md-6 gap-2 d-flex justify-content-end">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-user-circle"></i>
+                        <span class="d-none d-sm-block ps-2">Sign in</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-heart"></i>
+                        <span class="d-none d-sm-block ps-2">Wishlist</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-outline-secondary  d-flex justify-content-center align-items-center">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="d-none d-sm-block ps-2">My cart</span>
+                    </button>
+                </div>
+                <div class="col-12 col-md-5 mt-2 mt-md-0">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Search" />
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary py-4">
+            <div class="container">
+                <h3 class="text-white">Men's Clothing</h3>
+                <small class="text-white-50">Home > Library > <span
+                        class="text-white text-decoration-underline">Data</span></small>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-3">
+                    <!-- filters -->
+                    <button class="text-uppercase btn btn-outline-primary w-100 mb-3 d-lg-none"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-filter" aria-expanded="false"
+                        aria-controls="collapse-filter">
+                        Show filter
+                    </button>
+                    <div class="accordion shadow-sm mb-4 collapse d-lg-block" id="collapse-filter">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#filter-related-items"
+                                    aria-expanded="false" aria-controls="filter-related-items">
+                                    Related items
+                                </button>
+                            </h2>
+                            <div id="filter-related-items" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-decoration-none text-dark">Electronics</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Home items</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Books, Magazines</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Men's clothings</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Interior items</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Underwears</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Shoes for men</a></li>
+                                        <li><a href="#" class="text-decoration-none text-dark">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#filter-brands" aria-expanded="false"
+                                    aria-controls="filter-brands">
+                                    Brands
+                                </button>
+                            </h2>
+                            <div id="filter-brands" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Mercedes</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">120</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Toyota</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">15</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Mitsubishi</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">35</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Nissan</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">89</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Honda</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">30</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox"><label class="ms-1">Suzuki</label>
+                                        </div>
+                                        <span class="rounded bg-body-secondary mt-1"
+                                            style="padding: 0 2px 0 2px;">30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#filter-price" aria-expanded="false"
+                                    aria-controls="filter-price">
+                                    Price
+                                </button>
+                            </h2>
+                            <div id="filter-price" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <input type="range" class="form-range col-12">
+                                        <div class="col-6 pt-2">
+                                            <label>Min</label><br>
+                                            <input type="text" placeholder="$0" class="rounded border w-100">
+                                        </div>
+                                        <div class="col-6 pt-2">
+                                            <label>Max</label><br>
+                                            <input type="text" placeholder="$10,000" class="rounded border w-100">
+                                        </div>
+                                        <div class=" col-12 mt-4 px-3">
+                                            <button
+                                                class="text-uppercase w-100 border-1 rounded py-2 bg-light">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#filter-size" aria-expanded="false"
+                                    aria-controls="filter-size">
+                                    Size
+                                </button>
+                            </h2>
+                            <div id="filter-size" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <input type="checkbox" class="btn-check border justify-content-center"
+                                        id="filter-size-xs">
+                                    <label class="btn btn-white mb-1 px-1" style="width: 60px;"
+                                        for="filter-size-xs">XS</label>
+                                    <input type="checkbox" class="btn-check border justify-content-center"
+                                        id="filter-size-sm">
+                                    <label class="btn btn-white mb-1 px-1" style="width: 60px;"
+                                        for="filter-size-sm">SM</label>
+                                    <input type="checkbox" class="btn-check border justify-content-center"
+                                        id="filter-size-lg">
+                                    <label class="btn btn-white mb-1 px-1" style="width: 60px;"
+                                        for="filter-size-lg">LG</label>
+                                    <input type="checkbox" class="btn-check border justify-content-center"
+                                        id="filter-size-xxl">
+                                    <label class="btn btn-white mb-1 px-1" style="width: 60px;"
+                                        for="filter-size-xxl">XXL</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed btn btn-light border bg-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#filter-ratings" aria-expanded="false"
+                                    aria-controls="filter-ratings">
+                                    Ratings
+                                </button>
+                            </h2>
+                            <div id="filter-ratings" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox"><label class="ms-1">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"><label class="ms-1">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"><label class="ms-1">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"><label class="ms-1">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"><label class="ms-1">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <!-- products -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>32 Items found</span>
+                        <select class="form-select" aria-label="Default select example" style="width: fit-content;">
+                            <option selected value="best-match">Best match</option>
+                            <option value="recommended">Recommended</option>
+                            <option value="high-rated">High rated</option>
+                            <option value="randomly">Randomly</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="card w-100 shadow-sm" style="width: 18rem;">
+                                <div class="card-body row">
+                                    <div class="col-12 col-sm-12 col-md-3 p-5 p-md-0 align-items-center">
+                                        <img src="./static/img/product-7.jpg" class="card-img-top" alt="Product 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <h3>Rucksack Backpack Jeans</h3>
+                                        <div class="ms-1 d-flex align-items-center">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-half-alt text-warning"></i>
+                                            <span class="text-warning ms-2">4.5</span>
+                                            <span class="text-secondary ms-2"> 154 Orders</span>
+                                        </div>
+                                        <p class="card-text">
+                                            Short description about the product goes here, for ex its features. Lorem
+                                            ipsum dolor sit amet with hapti you enter into any new area of science, you
+                                            almost lorem ipsum is great text consectetur adipisicing
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title">$34,50</h5>
+                                            <small class="text-decoration-line-through text-danger ms-2">$49.99</small>
+                                        </div>
+                                        <bold class="text-success fw-medium">Free Shipping</bold>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn btn-primary text-uppercase">Buy this</a>
+                                            <button type="button" class="btn btn-outline-secondary border">
+                                                <i class="fa fa-heart text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="card w-100 shadow-sm" style="width: 18rem;">
+                                <div class="card-body row">
+                                    <div class="col-12 col-sm-12 col-md-3 p-5 p-md-0 align-items-center">
+                                        <img src="./static/img/product-1.jpg" class="card-img-top" alt="Product 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <h3>Men's Denim Jeans Shorts</h3>
+                                        <div class="ms-1 d-flex align-items-center">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-regular fa-star text-warning"></i>
+                                            <i class="fa fa-regular fa-star text-warning"></i>
+                                            <span class="text-warning ms-2">3</span>
+                                            <span class="text-secondary ms-2">73 Orders</span>
+                                        </div>
+                                        <p class="card-text">
+                                            Re-engineered Digital Crown with hapti Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua tempor incididunt ut labore et dolore magna [...]
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title">$34,50</h5>
+                                            <small class="text-decoration-line-through text-danger ms-2">$49.99</small>
+                                        </div>
+                                        <bold class="text-warning fw-medium">Paid Shipping</bold>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn btn-primary text-uppercase">Buy this</a>
+                                            <button type="button" class="btn btn-outline-secondary border">
+                                                <i class="fa fa-heart text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="card w-100 shadow-sm" style="width: 18rem;">
+                                <div class="card-body row">
+                                    <div class="col-12 col-sm-12 col-md-3 p-5 p-md-0 align-items-center">
+                                        <img src="./static/img/product-2.jpg" class="card-img-top" alt="Product 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <h3>T-shirt for Men Blue Cotton Base</h3>
+                                        <div class="ms-1 d-flex align-items-center">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-half-alt text-warning"></i>
+                                            <i class="fa fa-regular fa-star text-warning"></i>
+                                            <span class="text-warning ms-2">3.5</span>
+                                            <span class="text-secondary ms-2">910 Orders</span>
+                                        </div>
+                                        <p class="card-text">
+                                            Short description about the product goes here, for ex its features. Lorem
+                                            ipsum dolor sit amet with hapti you enter into any new area of science, you
+                                            almost lorem ipsum is great text consectetur adipisicing
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title">$99,50</h5>
+                                        </div>
+                                        <bold class="text-success fw-medium">Free Shipping</bold>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn btn-primary text-uppercase">Buy this</a>
+                                            <button type="button" class="btn btn-outline-secondary border">
+                                                <i class="fa fa-heart text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="card w-100 shadow-sm" style="width: 18rem;">
+                                <div class="card-body row">
+                                    <div class="col-12 col-sm-12 col-md-3 p-5 p-md-0 align-items-center">
+                                        <img src="./static/img/product-3.jpg" class="card-img-top" alt="Product 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <h3>Winter Jacket for Men and Women</h3>
+                                        <div class="ms-1 d-flex align-items-center">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-half-alt text-warning"></i>
+                                            <span class="text-warning ms-2">4.5</span>
+                                            <span class="text-secondary ms-2">154 Orders</span>
+                                        </div>
+                                        <p class="card-text">
+                                            Short description about the product goes here, for ex its features. Lorem
+                                            ipsum dolor sit amet with hapti you enter into any new area of science, you
+                                            almost lorem ipsum is great text
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title">$140</h5>
+                                            <small class="text-decoration-line-through text-danger ms-2">$190</small>
+                                        </div>
+                                        <bold class="text-success fw-medium">Free Shipping</bold>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn btn-primary text-uppercase">Buy this</a>
+                                            <button type="button" class="btn btn-outline-secondary border">
+                                                <i class="fa fa-heart text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="card w-100 shadow-sm" style="width: 18rem;">
+                                <div class="card-body row">
+                                    <div class="col-12 col-sm-12 col-md-3 p-5 p-md-0 align-items-center">
+                                        <img src="./static/img/product-4.jpg" class="card-img-top" alt="Product 1">
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <h3>T-shirt for Men Blue Cotton Base</h3>
+                                        <div class="ms-1 d-flex align-items-center">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star-half-alt text-warning"></i>
+                                            <span class="text-warning ms-2">4.5</span>
+                                            <span class="text-secondary ms-2">154 Orders</span>
+                                        </div>
+                                        <p class="card-text">
+                                            Short description about the product goes here, for ex its features. Lorem
+                                            ipsum dolor sit amet with hapti you enter into any new area of science, you
+                                            almost lorem ipsum is great text consectetur adipisicing
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title">$99.50</h5>
+                                            <small class="text-decoration-line-through text-danger ms-2">$190</small>
+                                        </div>
+                                        <bold class="text-success fw-medium">Free Shipping</bold>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn btn-primary text-uppercase">Buy this</a>
+                                            <button type="button" class="btn btn-outline-secondary border">
+                                                <i class="fa fa-heart text-danger"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    </section>
+    <footer>
+        <div class="bg-primary py-3">
+            <div class="container">
+                <div class="row text-white text-center text-sm-start">
+                    <div class="col-12 col-lg-3 mb-4">
+                        <!-- brand -->
+                        <h4 class="mb-0">Infomin Solutions</h4>
+                        <small>&copy; 2023 Copyright</small>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- store -->
+                        <h6 class="text-uppercase">Store</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">About us</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Find store</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Categories</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- information -->
+                        <h6 class="text-uppercase">Information</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Money refund</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Shipping info</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Refunds</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- support -->
+                        <h6 class="text-uppercase">Support</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Documents</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Account restore</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">My orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <!-- newsletter -->
+                        <h6 class="text-uppercase">Newsletter</h6>
+                        <small class="text-white">
+                            Stay in touch with latest updates about our products and offers
+                        </small>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email" />
+                            <button type="button" class="btn btn-light text-uppercase border">
+                                Join
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
