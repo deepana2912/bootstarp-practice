@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-2 col-md-1">
+                    <img src="./static/img/logo.png" alt="logo" width="40px" class="ms-1">
+                </div>
+                <div class="order-md-last col-10 col-md-6 gap-2 d-flex justify-content-end">
+                    <button type="button"
+                        class="btn btn-outline-primary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-user-circle"></i>
+                        <span class="d-none d-sm-block ps-2">Sign in</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-outline-primary d-flex justify-content-center align-items-center">
+                        <i class="fa fa-heart"></i>
+                        <span class="d-none d-sm-block ps-2">Wishlist</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-outline-primary  d-flex justify-content-center align-items-center">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="d-none d-sm-block ps-2">My cart</span>
+                    </button>
+                </div>
+                <div class="col-12 col-md-5 mt-2 mt-md-0">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Search" />
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary py-4">
+            <div class="container">
+                <h3 class="text-white">Men's Clothing</h3>
+                <small class="text-white-50">Home >
+                    <span class="text-white text-decoration-underline">Shopping cart</span>
+                </small>
+            </div>
+        </div>
+    </header>
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <div class="border rounded p-3">
+                    <h4 class="mb-3">Your shopping cart</h4>
+                    <div class="row">
+                        <div class="row g-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <img src="./static/img/product-3.jpg" alt="product-1"
+                                            class="border rounded w-100">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>Winter jacket for men and lady</h6>
+                                        <h6 class="text-secondary">Yellow, Jeans</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <select class="form-select  aria-label=" Default select example"
+                                            style="width: 100px;">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <h6 class="mb-0">$1156.00</h6>
+                                        <small class="text-secondary">$460.00/per item</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger text-uppercase">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <img src="./static/img/product-4.jpg" alt="product-1"
+                                            class="border rounded w-100">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>Men's T-shirt Cotton Base</h6>
+                                        <h6 class="text-secondary">Blue, Medium</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <select class="form-select" aria-label="Default select example"
+                                            style="width: 100px;">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <h6 class="mb-0">$44.80</h6>
+                                        <small class="text-secondary">$12.20/per item</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger text-uppercase">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <img src="./static/img/product-5.jpg" alt="product-1"
+                                            class="border rounded w-100">
+                                    </div>
+                                    <div class="col-9">
+                                        <h6>Blazer Suit Dress Jacket for Men</h6>
+                                        <h6 class="text-secondary">XL size, Jeans, Blue</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <select class="form-select" aria-label="Default select example"
+                                            style="max-width: 100px;">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <h6 class="mb-0">$1156.00</h6>
+                                        <small class="text-secondary">$460.00/per item</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="fa fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger text-uppercase">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-4">
+                        <span><i class="fa fa-truck text-secondary"></i> Free Delivery within 1-2 weeks</span>
+                        <p class="fs-6 text-secondary py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corporis, quos consequatur sequi quaerat cum doloremque in voluptas. Veniam omnis molestiae
+                            eaque sapiente! Saepe, nam qui!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="border rounded p-3">
+                    <p>Have coupon?</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Coupon code">
+                        <button class="btn btn-outline-secondary text-uppercase" type="button">Apply</button>
+                    </div>
+                </div>
+                <div class="border rounded p-3 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Total price:</span>
+                        <span>$329.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Discount:</span>
+                        <span class="text-success">-$60.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>TAX:</span>
+                        <span>$14.00</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Total price:</span>
+                        <span>$283.00</span>
+                    </div>
+                    <button type="button" class="btn btn-success text-uppercase w-100 mt-4">Make purchase</button><br>
+                    <button type="button" class="btn text-secondary border text-uppercase w-100 mt-3">Back to
+                        shop</button>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-4">Recommended items</h4>
+        <div class="row mb-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+                <div class="p-3 border rounded shadow">
+                    <div class="d-flex justify-content-between">
+                        <span class="badge text-bg-danger">New</span>
+                        <div class="text-primary d-flex justify-content-end">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./static/img/product-14.jpg" alt="product-1" class="w-75">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="fw-normal">Gaming Headset with Mic</h6>
+                        <p class="fw-bold">
+                            $18.95
+                            <span class="text-decoration-line-through fw-normal">$24.99</span>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary text-uppercase w-75">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+                <div class="p-3 border rounded shadow">
+                    <div class="text-primary d-flex justify-content-end">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./static/img/product-12.jpg" alt="product-1" class="w-75">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="fw-normal">Apple Watch Series 1 Sport</h6>
+                        <p class="fw-bold">$120.00</p>
+                    </div>
+                    <div class="text-center"><a href="#" class="btn btn-outline-primary text-uppercase w-75">Add to
+                            cart</a></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+                <div class="p-3 border rounded shadow">
+                    <div class="text-primary d-flex justify-content-end">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./static/img/product-1.jpg" alt="product-1" class="w-75">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="fw-normal">Men's Denim Jeans Shorts</h6>
+                        <p class="fw-bold">$80.50</p>
+                    </div>
+                    <div class="text-center"><a href="#" class="btn btn-outline-primary text-uppercase w-75">Add to
+                            cart</a></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2">
+                <div class="p-3 border rounded shadow">
+                    <div class="text-primary d-flex justify-content-end">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img src="./static/img/product-2.jpg" alt="product-1" class="w-75">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="fw-normal">Men's T-shirt Cotton Base Layer Slim fit</h6>
+                        <p class="fw-bold">$13.90</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary text-uppercase w-75">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-primary py-3">
+            <div class="container">
+                <div class="row text-white text-center text-sm-start">
+                    <div class="col-12 col-lg-3 mb-4">
+                        <!-- brand -->
+                        <h4 class="mb-0">Infomin Solutions</h4>
+                        <small>&copy; 2023 Copyright</small>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- store -->
+                        <h6 class="text-uppercase">Store</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">About us</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Find store</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Categories</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- information -->
+                        <h6 class="text-uppercase">Information</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Money refund</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Shipping info</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Refunds</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <!-- support -->
+                        <h6 class="text-uppercase">Support</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Help center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Documents</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Account restore</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">My orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3">
+                        <!-- newsletter -->
+                        <h6 class="text-uppercase">Newsletter</h6>
+                        <small class="text-white">
+                            Stay in touch with latest updates about our products and offers
+                        </small>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email" />
+                            <button type="button" class="btn btn-light text-uppercase border">
+                                Join
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
